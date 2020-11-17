@@ -1,0 +1,42 @@
+/************* Niet aanpassen *******************/
+.container{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox{
+    width:90%;
+    height: 600px;
+    margin-top: 30px;
+}
+.box{
+    width:200px;
+    height:150px;
+}
+/************************************************/
+
+/* schrijft je css hier onder */
+
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flex3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+}

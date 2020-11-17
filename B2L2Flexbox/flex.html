@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FlexBox/Grid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="flex.css">
+    </head>
+    <body>
+        <div class='container'>
+            <h1>FLEXBOX, GRID System</h1>
+
+          <div class='flex1 flexbox'style='border:1px solid green;'>
+            <!--
+                Zorg ervoor dat:
+                    - alle .flex1-child divs moeten midden de groene rechthoek gecentreerd worden
+                    - de ruimte tussen de .flex1-child divs moet hetzelfde zijn eromheen en tussen de divs
+                    - als het scherm verkleind wordt dat de .flex1-child divs onder elkaar komen te staan
+            -->
+            <div class='flex1-child box' style='border:1px solid green;'></div>
+            <div class='flex1-child box' style='border:1px solid green'></div>
+            <div class='flex1-child box' style='border:1px solid green'></div>
+          </div>
+
+          <div class='flex2 flexbox'style='border:1px solid red;'>
+            <!--
+                Zorg ervoor dat:
+                    - alle .flex2-child divs helemaal rechts boven in de rode rechthoek staan
+                    - .flex2-child divs moeten onder elkaar zijn
+            -->
+            <div class='flex2-child box' style='border:1px solid red;width:50%'></div>
+            <div class='flex2-child box' style='border:1px solid red;width:50%'></div>
+            <div class='flex2-child box' style='border:1px solid red;width:50%'></div>
+          </div>
+
+          <div class='flex3 flexbox' style='border:1px solid blue;'>
+            <!--
+                Zorg ervoor dat:
+                    - alle .flex3-child divs helemaal onder in de blauwe rechthoek staan
+                    - alle .flex3-child divs alle beschikbaar ruimte van de blauwe rechthoek nemen,
+                      geen ruimte eromheen maar wel tussen
+                    - als het scherm verkleind wordt dat de .flex3-child divs onder elkaar komen te staan
+            -->
+            <div class='flex3-child box' style='border:1px solid blue'></div>
+            <div class='flex3-child box' style='border:1px solid blue'></div>
+            <div class='flex3-child box' style='border:1px solid blue'></div>
+          </div>
+
+        </div>
+    </body>
+</html>
