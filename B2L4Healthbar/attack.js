@@ -1,5 +1,5 @@
 const healthbar = document.getElementById('healthbar');
-const text = document.getElementById('text');
+const textElement = document.getElementById('text');
 
 function attack() {
     oldHealth = healthbar.value;
@@ -7,7 +7,7 @@ function attack() {
 
     if(oldHealth - damage <= 0) {
         healthbar.value = 0;
-        text.innerHTML = 'You win!'
+        textElement.innerHTML = 'You win!'
     } else {
         healthbar.value = oldHealth - damage
     }

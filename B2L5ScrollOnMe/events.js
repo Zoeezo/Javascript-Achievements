@@ -1,9 +1,9 @@
-const text = document.getElementById('text');
+const textElement = document.getElementById('text');
 
 document.addEventListener('click', () => {
-    text.innerHTML = 'Don\'t scroll! Do click! ';
+    textElement.innerHTML = 'Don\'t scroll! Do click! ';
 });
 
 document.addEventListener('wheel', () => {
-    text.innerHTML = text.innerHTML + 'A';
+    textElement.innerHTML = textElement.innerHTML + 'A';
 });

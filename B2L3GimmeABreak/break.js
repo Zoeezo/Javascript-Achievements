@@ -3,7 +3,7 @@ const inputEndTime = document.getElementById('end-time');
 const clock = document.getElementById('clock');
 const image = document.getElementById('image')
 const timerInfo = document.getElementById('timer-info');
-const button = document.getElementById('button');
+const buttonElement = document.getElementById('button');
 
 
 let beginHour;
@@ -14,7 +14,7 @@ let endMinutes;
 let timer = false;
 let e = setInterval(updateTime, 1000);
 
-button.addEventListener('click', function() {
+buttonElement.addEventListener('click', function() {
     beginHour = parseInt(inputBeginTime.value.slice(0, 2));
     beginMinutes = parseInt(inputBeginTime.value.slice(3));
     endHour = parseInt(inputEndTime.value.slice(0, 2));

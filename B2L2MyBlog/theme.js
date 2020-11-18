@@ -1,11 +1,11 @@
 const root = document.documentElement;
 
-const button = document.getElementById('theme-button');
+const buttonElement = document.getElementById('theme-button');
 const buttonImage = document.getElementById('theme-button-image');
 
 let theme = 'dark';
 
-button.addEventListener('click', function() {
+buttonElement.addEventListener('click', function() {
     if(theme == 'dark') {
         theme = 'light'
     } else {
@@ -15,7 +15,7 @@ button.addEventListener('click', function() {
     setTheme()
 });
 
-button.addEventListener('mouseenter', function() {
+buttonElement.addEventListener('mouseenter', function() {
     if(theme == 'dark') {
         buttonImage.src = 'Images/darkmode-alt.png';
     } else {
@@ -23,7 +23,7 @@ button.addEventListener('mouseenter', function() {
     }
 });
 
-button.addEventListener('mouseleave', function() {
+buttonElement.addEventListener('mouseleave', function() {
     if(theme == 'dark') {
         buttonImage.src = 'Images/darkmode.png';
     } else {
